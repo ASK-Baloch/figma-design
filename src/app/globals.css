@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.label {
+  height: 41px;
+  width: 201px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.label .text-wrapper {
+  color: #ffffff;
+  font-family: "Lora-SemiBold", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  text-align: right;
+  top: 0;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.img {
+  background-size: 100% 100%;
+  height: 40px;
+  width: 40px;
+}
+.twitter-x {
+  height: 30px;
+  position: relative;
+  width: 35px;
+}
+.twitter-x .layer {
+    background-color: white;
+    
+  height: 31px;
+  left: 202px;
+  position: absolute;
+  top: 0px;
+  width: 40px;
 }
