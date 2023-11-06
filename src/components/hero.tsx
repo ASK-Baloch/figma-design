@@ -31,7 +31,7 @@ const Hero = () => {
             className="-ml-1 pt-2 pb-3 pl-14 pr-12 rounded-t-xl"
             style={{ backgroundColor: "#FFFFFF" }}
             alt="layer JPEG"
-            src="layer_1.png"
+            src="Layer_1.png"
           />
           <img
             className=" pt-2 pb-3 pl-10 pr-10 rounded-xl"
