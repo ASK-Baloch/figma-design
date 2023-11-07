@@ -10,11 +10,13 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex bg-white  h-[96px] ">
-      <img
-        className="ml-20 w-[144px] h-[80px]"
-        alt="Primary logo JPEG"
-        src="primary-logo.png"
-      />
+      <Link href={"/"}>
+        <img
+          className="ml-20 w-[144px] h-[80px]"
+          alt="Primary logo JPEG"
+          src="primary-logo.png"
+        />
+      </Link>
       <div className="flex">
         <Input
           className="h-12 w-28 mt-5 ml-24 border-none"

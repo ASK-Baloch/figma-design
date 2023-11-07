@@ -296,7 +296,7 @@ const Footer = () => {
               className="layer rounded-full"
             />
           </div>
-          <div className=" absolute top-15 right-12 mt-12  flex text-start justify-start ">
+          <div className=" absolute top-15  mt-12  flex text-start justify-start ">
             <img
               src="googleplay.png"
               alt="googleplay"

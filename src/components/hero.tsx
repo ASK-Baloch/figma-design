@@ -23,7 +23,7 @@ const Hero = () => {
           src="image-4.png"
         />
       </div>
-      <div className="w-[1060px] h-[718px]  z-1 relative -top-48 left-14 rounded-xl bg-white border shadow-lg">
+      <div className="w-[1060px] h-[658px]  z-1 relative -top-48 left-14 rounded-xl bg-white border shadow-lg">
         <div className="ml-1 w-fill h-[68px] rounded-xl flex gap-12"
           style={{ backgroundColor: "#EBEBEB" }}
         >

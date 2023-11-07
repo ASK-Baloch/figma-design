@@ -9,16 +9,17 @@ import {
   Search,
   ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const page = () => {
   return (
-    <div style={{backgroundColor:"#edeef0"}}>
+    <div style={{backgroundColor:"#EDEEF0"}} className="h-full w-[1320px]">
       <Navbar />
       <div
         className="mt-7 mb-8 gap-2 flex ml-16 text-base font-semibold cursor-pointer "
         style={{ color: "#003087" }}
       >
-        <p>Home</p>
+        <Link href={"/"}>Home</Link>
         <ChevronRight />
         <p>My car search </p>
         <ChevronRight />
@@ -26,7 +27,7 @@ const page = () => {
         <ChevronRight />
         <p>Kia Stonic 1.4 MPI EX URBAN A/T</p>
       </div>
-      <section className=" w-100$ h-[2720px]">
+      <section className=" w-screen h-[3420px]">
         <Sidebar />
       </section>
       <Footer />
