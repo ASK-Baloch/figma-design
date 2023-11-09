@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="lg:flex bg-white  h-[96px] sm:block sm:mb-72 lg:mb-0 lg:bg-red-500">
+    <nav className="lg:flex bg-white  h-[96px] sm:block sm:mb-72 lg:mb-0 ">
       <Link href={"/"}
        className="flex sm:justify-center sm:items-center lg:block sm:-ml-24 lg:ml-6">
         <img
