@@ -10,6 +10,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import Cars from "@/components/sidebar";
 
 const page = () => {
   return (
@@ -28,7 +29,7 @@ const page = () => {
         <p>Kia Stonic 1.4 MPI EX URBAN A/T</p>
       </div>
       <section className=" w-screen h-[3420px]">
-        <Sidebar />
+        <Cars />
       </section>
       <Footer />
     </div>

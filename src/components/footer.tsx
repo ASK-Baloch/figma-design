@@ -6,19 +6,19 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div
-      className="relative flex flex-col "
-      style={{ backgroundColor: "#003087" }}
+      className="relative flex flex-col  "
+      style={{ backgroundColor: "#003087" , width:"100vw"}}
     >
       <section
-        className="mt-2 flex  w-100% h-[779px] text-white
+        className="mt-2 flex  w-100% lg:h-[779px] sm:h-[1600px] text-white w-full  sm:flex-col lg:flex-row
       "
         style={{ backgroundColor: "#003087" }}
       >
         <div className="flex flex-col ">
-          <h4 className="h-[82px] w-[398px] ml-20 font-semibold text-2xl mt-14">
+          <h4 className="h-[82px] w-[398px] lg:ml-20 font-semibold text-2xl mt-14 sm:ml-1 ">
             The most wanted makes and models
           </h4>
-          <div className="ml-20 w-[410px] mt-5 flex flex-wrap justify-between">
+          <div className="lg:ml-20 w-[410px] mt-5 flex flex-wrap justify-between sm:ml-2 ">
             <Button
               className="flex h-[61px] w-[190px] shadow-md justify-center items-center text-white rounded my-2 mr-3"
               style={{ backgroundColor: "#264F99" }}
@@ -56,7 +56,7 @@ const Footer = () => {
               Renault Clio
             </Button>
           </div>
-          <div className="flex mt-52 ml-20">
+          <div className="flex lg:ml-20 sm:ml-12 sm:mt-16 lg:mt-52">
             <div className="flex items-center justify-between w-[156px] h-[40px] bg-white rounded-3xl">
               <div className="flex items-center">
                 <img
@@ -92,11 +92,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="ml-20 flex flex-col">
+        <div className="lg:ml-20 flex flex-col sm:flex sm:justify-center  sm:items-center lg:block ">
           <h4 className="h-[82px] w-[181px]  font-semibold text-3xl mt-14">
             Quick Links
           </h4>
-          <div className="h-[468px] w-[296px] ">
+          <div className="h-[468px] w-[296px] sm:flex sm:flex-col sm:mt-24 lg:mt-0 sm:justify-center  sm:items-center lg:block ">
             <Link
               className="text-white font-normal text-lg "
               href="/"
@@ -281,11 +281,11 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="ml-14 ">
-          <h4 className="h-[41px] w-[221px] text-wrapper text-3xl mt-14 text-end pl-3">
+        <div className="ml-14  ">
+          <h4 className="h-[41px] w-[221px] text-wrapper text-3xl lg:mt-14 sm:mt-32 text-end pl-3 sm:ml-4 sm:flex sm:justify-center  sm:items-center lg:block">
             Let`s connect
           </h4>
-          <div className="flex justify-start text-start img mt-14 twitter-x gap-5 text-xl">
+          <div className="flex lg:justify-start lg:text-start img lg:mt-14 sm:mt-5 twitter-x gap-5 text-xl sm:justify-start sm:ml-4">
             <img src="FB.png" alt="fb" />
             <img src="IG.png" alt="ig" />
             <img src="Lin.png" alt="lin" />
@@ -322,7 +322,7 @@ const Footer = () => {
         style={{ color: "#FFFFFF" }}
       >
         <hr
-          className="w-[1060px] h-[0px] mt-10 ml-7 border absolute bottom-32 left-9"
+          className="w-[370px] lg:w-[1060px] h-[0px] mt-10 lg:ml-7 sm:-ml-2 border absolute bottom-32 left-9"
           style={{ color: "#B8B8B8" }}
         />
         <p

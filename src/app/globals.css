@@ -38,3 +38,47 @@
   top: 0px;
   width: 40px;
 }
+
+@media (max-width: 640px) {
+  .mobile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mobile-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .mobile-button-90{
+    width: 100%;
+  }
+  .mobile-half{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mobile-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/* @media (min-width: 768px) {
+  .flex.justify-end.items-start.absolute.top-9.left-96 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  nav:not(.isOpen) {
+    height: 0;
+  }
+}
+@media (max-width: 767px) {
+  nav.isOpen {
+    height:auto;
+  }
+} */
