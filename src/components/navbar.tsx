@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
       <Button
         variant="secondary"
-        className="px-[32px] py-[8px] rounded-xl mt-6 lg:ml-20 border-box  flex  sm:justify-center sm:items-center sm:ml-36 "
+        className="px-[32px] py-[8px] rounded-xl mt-6 lg:ml-24 border-box  flex  sm:justify-center sm:items-center sm:ml-36 "
         style={{ backgroundColor: "#003087", color: "#FFFFFF" }}
       >
         Login
