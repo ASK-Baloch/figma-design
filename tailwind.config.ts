@@ -20,7 +20,7 @@ const config: Config = {
       'md': '960px',
       // => @media (min-width: 960px) { ... }
 
-      'lg': '1140px',
+      'lg': '840px',
       // => @media (min-width: 1440px) { ... }
     },
   },
