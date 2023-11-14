@@ -1,16 +1,25 @@
+"use client";
 import React from "react";
-
 import { ChevronDown, ChevronUp, Search } from "lucide-react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { useMediaQuery } from "react-responsive";
 import Sidebar from "./aside-section";
+import DropDown from "@/components/icons/dropdown/page";
 const Cars = () => {
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 });
+
   return (
-    // <div>
-    //   <aside className="h-[2336px] w-[296px] flex bg-green-800">somet</aside>
-    // </div>
-    <div className="flex gap-2" style={{width:"100vw"}}>
-      <Sidebar />
-      <main className="flex-grow flex-col relative rounded-xl shadow-lg p-2 ">
+    <div className="flex gap-2 w-fit">
+      {isDesktopOrLaptop ? (
+        <div className="ml-14">
+          <Sidebar />
+        </div>
+      ) : (
+        <div className="z-50 absolute top-[29rem] ">
+          <DropDown />
+        </div>
+      )}
+      <main className="flex-grow flex-col relative rounded-xl shadow-lg p-2 z-10">
         <div className="   flex flex-row  gap-2">
           <div className="  w-1/3 space-y-5 shadow-2xl">
             <img className="w-full h-[208px]" alt="car JPEG" src="car1.png" />
@@ -147,19 +156,6 @@ const Cars = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className=" flex gap-2 absolute bottom-52 right-12 ">
-          <img
-            src="leftarrow.png"
-            alt="leftarrow jpg"
-            className="h-[40px] w-[40px]  cursor-pointer"
-          />
-          <img
-            src="rightarrow.png"
-            alt="rightarrow jpg"
-            className="h-[40px] w-[40px]  cursor-pointer"
-          />
         </div>
         <div className=" border-2 rounded-xl mt-4 bg-white p-4 ">
           <div className=" gap-3 flex flex-row  bg-white pr-14  ">
@@ -581,12 +577,11 @@ const Cars = () => {
             </div>
           </div>
         </div>
-        <div className=" border-2 rounded-xl mt-4  p-4  "
+        <div
+          className=" border-2 rounded-xl mt-4  p-4  "
           style={{ backgroundColor: "#00308726" }}
         >
-          <div
-            className=" gap-3 flex flex-row  pr-14  "
-          >
+          <div className=" gap-3 flex flex-row  pr-14  ">
             <div className=" w-1/3 ">
               <img className="w-full h-full" alt="car JPEG" src="car2.png" />
             </div>
@@ -1005,9 +1000,24 @@ const Cars = () => {
             </div>
           </div>
         </div>
+        <div className=" flex gap-2 relative float-right pr-14 top-28 ">
+          <img
+            src="leftarrow.png"
+            alt="leftarrow jpg"
+            className="h-[40px] w-[40px]  cursor-pointer"
+          />
+          <img
+            src="rightarrow.png"
+            alt="rightarrow jpg"
+            className="h-[40px] w-[40px]  cursor-pointer"
+          />
+        </div>
       </main>
-      <div className="h-[4240px] w-full -mt-20 "  style={{ backgroundColor:"#EDEEF0"}}>
-      <div className="flex h-[40px] w-[110px] bg-red-500 rounded-xl text-white justify-center cursor-pointer items-center mt-[1000px] ml-1 mr-3">
+      <div
+        className="h-[4240px] w-full -mt-20 "
+        style={{ backgroundColor: "#EDEEF0" }}
+      >
+        <div className="flex h-[40px] w-[110px] bg-red-500 rounded-xl text-white justify-center cursor-pointer items-center mt-[1000px] ml-1 mr-3">
           <ChevronUp />
           <p className="text-sm">Back to Top</p>
         </div>

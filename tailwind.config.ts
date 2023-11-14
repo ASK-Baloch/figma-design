@@ -17,12 +17,27 @@ const config: Config = {
       'sm': '276px',
       // => @media (min-width: 576px) { ... }
 
-      'md': '960px',
+      'md': '860px',
       // => @media (min-width: 960px) { ... }
 
-      'lg': '840px',
+      'lg': '1040px',
       // => @media (min-width: 1440px) { ... }
     },
+    backdropBlur: {
+      'none': '0',
+      'sm': '4px',
+      'DEFAULT': '8px',
+      'md': '12px',
+      'lg': '16px',
+      'xl': '24px',
+      '2xl': '40px',
+      '3xl': '64px',
+    }
+  },
+  variants: {
+    extend: {
+      backdropBlur: ['responsive'], // or other variants you want to enable
+    }
   },
   plugins: [],
 }
