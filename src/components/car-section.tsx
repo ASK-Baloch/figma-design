@@ -1,30 +1,25 @@
-"use client";
+"use server";
 import React from "react";
 import { ChevronDown, ChevronUp, Search } from "lucide-react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { useMediaQuery } from "react-responsive";
 import Sidebar from "./aside-section";
-import DropDown from "@/components/icons/dropdown/page";
+import DropDown from "@/components/dropdown";
 const Cars = () => {
-  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <div className="flex gap-2 w-fit">
-      {isDesktopOrLaptop ? (
-        <div className="ml-14">
-          <Sidebar />
-        </div>
-      ) : (
-        <div className="z-50 absolute top-[29rem] ">
-          <DropDown />
-        </div>
-      )}
-      <main className="flex-grow flex-col relative rounded-xl shadow-lg p-2 z-10">
-        <div className="   flex flex-row  gap-2">
-          <div className="  w-1/3 space-y-5 shadow-2xl">
+      <div className="lg:block hidden ml-14">
+        <Sidebar />
+      </div>
+      <div className="lg:hidden z-50 absolute top-[31rem]">
+        <DropDown />
+      </div>
+      <main className="flex-grow flex-col relative rounded-xl shadow-lg py-2 px-1 z-10">
+        <div className="flex flex-row  gap-2">
+          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28  ">
             <img className="w-full h-[208px]" alt="car JPEG" src="car1.png" />
             <div className="px-3 ">
-              <p className=" text-[23px] h-23 font-poppins font-semibold leading-[22.7px]">
+              <p className=" lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex  sm:justify-end lg:block">
                 Volkswagen Tiguan
               </p>
             </div>
@@ -35,8 +30,8 @@ const Cars = () => {
             </div>
 
             <div className="  flex">
-              <div className="flex flex-row  gap-3 pb-3 pl-5 w-full ">
-                <div className="flex flex-col">
+              <div className="flex sm:flex-col lg:flex-row  gap-3 pb-3 pl-5 w-full ">
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     year
                   </div>
@@ -44,9 +39,10 @@ const Cars = () => {
                     2019
                   </div>
                 </div>
-                <div className=" w-[2px]  left-400 top-260 border border-gray-300"></div>
+                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300">
+                </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col sm:-ml-7 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Kilometers
                   </div>
@@ -54,9 +50,9 @@ const Cars = () => {
                     185.000
                   </div>
                 </div>
-                <div className=" w-[2px]  left-400 top-260 border border-gray-300"></div>
+                <div className=" lg:w-[2px]  lg:left-400 lg:top-260 sm:w-16 border border-gray-300"></div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Engine
                   </div>
@@ -67,10 +63,10 @@ const Cars = () => {
               </div>
             </div>
           </div>
-          <div className=" w-1/3 shadow-2xl space-y-5">
+          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28">
             <img className="w-full h-[208px]" alt="car JPEG" src="car2.png" />
             <div className="px-3 ">
-              <p className=" text-[23px] h-23 font-poppins font-semibold leading-[22.7px]">
+              <p className="lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex sm:text-sm sm:font-bold sm:leading-[22.7px] sm:justify-end lg:block">
                 Ford Mondeo ST
               </p>
             </div>
@@ -81,8 +77,8 @@ const Cars = () => {
             </div>
 
             <div className="  flex px-3">
-              <div className="flex flex-row  gap-3 pb-3 pl-5  w-full ">
-                <div className="flex flex-col">
+              <div className="flex sm:flex-col lg:flex-row  gap-3 pb-3 pl-5  w-full">
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     year
                   </div>
@@ -90,9 +86,9 @@ const Cars = () => {
                     2019
                   </div>
                 </div>
-                <div className=" w-[2px]  left-400 top-260 border border-gray-300"></div>
+                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16 sm:-ml-3  lg:ml-0 border-gray-300"></div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col sm:-ml-7 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Kilometers
                   </div>
@@ -100,9 +96,9 @@ const Cars = () => {
                     185.000
                   </div>
                 </div>
-                <div className=" w-[2px]  left-400 top-260 border border-gray-300"></div>
+                <div className=" lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16 sm:-ml-3 lg:ml-0 border-gray-300"></div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Engine
                   </div>
@@ -113,43 +109,47 @@ const Cars = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 shadow-2xl space-y-5">
+          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28  ">
             <img className="w-full h-[208px]" alt="car JPEG" src="car1.png" />
-            <div className="px-3">
-              <p className="text-[23px] h-23 font-poppins font-semibold leading-[22.7px]">
+            <div className="px-3 ">
+              <p className=" lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex  sm:justify-end lg:block">
                 Volkswagen Tiguan
               </p>
             </div>
-            <div className="px-3 py-0 text-14 h-23 w-[91.73px] h-[26.22px] left-[729.13px] font-poppins text-41 font-semibold leading-[22.7px] text-left text-[#EF2C2E]">
-              <p className="text-[20px] font-poppins font-semibold leading-[22.7px]">
+            <div className="  px-3 py-0 text-14 h-23 w-[91.73px] h-[26.22px] left-[729.13px] font-poppins text-41 font-semibold leading-[22.7px] text-left text-[#EF2C2E]">
+              <p className=" text-[20px] font-poppins font-semibold  leading-[22.7px]">
                 20,300€
               </p>
             </div>
-            <div className="flex px-3">
-              <div className="flex flex-row   gap-3 pb-3 pl-5 w-full ">
-                <div className="flex flex-col">
+
+            <div className="  flex">
+              <div className="flex sm:flex-col lg:flex-row  gap-3 pb-3 pl-5 w-full ">
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     year
                   </div>
-                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center text-black">
+                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center  text-black">
                     2019
                   </div>
                 </div>
-                <div className="w-[2px] left-400 top-260 border border-gray-300"></div>
-                <div className="flex flex-col">
+                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300">
+                </div>
+
+                <div className="flex flex-col sm:-ml-7 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Kilometers
                   </div>
-                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center text-black">
+                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center  text-black">
                     185.000
                   </div>
                 </div>
-                <div className="w-[2px] left-400 top-260 border border-gray-300"></div>
-                <div className="flex flex-col">
+                <div className=" lg:w-[2px]  lg:left-400 lg:top-260 sm:w-16 border border-gray-300"></div>
+
+                <div className="flex flex-col sm:-ml-9 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
                     Engine
                   </div>
-                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center text-black">
+                  <div className="w-25.53 h-14.3 top-513.7 left-732.92 font-poppins text-11 font-semibold leading-17 text-center  text-black">
                     Petrol
                   </div>
                 </div>

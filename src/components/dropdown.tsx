@@ -16,7 +16,7 @@ const DropDown = () => {
         {isOpen ? <Cross /> : <Bars  /> }
       </div>
       {isOpen &&  ( 
-        <div className="border-none shadow-none h-full ml-2  backdrop-blur-md ">
+        <div className="border-none shadow-none h-[3410px] ml-1  backdrop-blur-md ">
           <Sidebar />
         </div>
       )}
