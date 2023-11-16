@@ -5,18 +5,17 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import Sidebar from "./aside-section";
 import DropDown from "@/components/dropdown";
 const Cars = () => {
-
   return (
-    <div className="flex gap-2 w-fit">
+    <div className="flex gap-2 w-fit  ">
       <div className="lg:block hidden ml-14">
         <Sidebar />
       </div>
       <div className="lg:hidden z-50 absolute top-[31rem]">
         <DropDown />
       </div>
-      <main className="flex-grow flex-col relative rounded-xl shadow-lg py-2 px-1 z-10">
-        <div className="flex flex-row  gap-2">
-          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28  ">
+      <main className="flex-grow flex-col relative rounded-xl  py-2 lg:px-1 z-10 sm:mr-2 sm:h-[5550px] lg:h-[150px] ">
+        <div className="flex flex-row  gap-2 sm:w-fit lg:w-fit sm:ml-1">
+          <div className="lg:w-2/5  lg:space-y-5 shadow-2xl sm:w-32 lg:pr-4  ">
             <img className="w-full h-[208px]" alt="car JPEG" src="car1.png" />
             <div className="px-3 ">
               <p className=" lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex  sm:justify-end lg:block">
@@ -39,8 +38,7 @@ const Cars = () => {
                     2019
                   </div>
                 </div>
-                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300">
-                </div>
+                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300"></div>
 
                 <div className="flex flex-col sm:-ml-7 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
@@ -63,10 +61,10 @@ const Cars = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28">
+          <div className="lg:w-2/5 lg:space-y-5 shadow-2xl sm:w-32 lg:pr-4">
             <img className="w-full h-[208px]" alt="car JPEG" src="car2.png" />
             <div className="px-3 ">
-              <p className="lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex sm:text-sm sm:font-bold sm:leading-[22.7px] sm:justify-end lg:block">
+              <p className="lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex sm:text-md sm:font-semibold sm:leading-[22.7px] sm:justify-end lg:block">
                 Ford Mondeo ST
               </p>
             </div>
@@ -109,7 +107,7 @@ const Cars = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 lg:space-y-5 shadow-2xl sm:w-28  ">
+          <div className="lg:w-2/5 lg:space-y-5 shadow-2xl sm:w-32 lg:pr-4 ">
             <img className="w-full h-[208px]" alt="car JPEG" src="car1.png" />
             <div className="px-3 ">
               <p className=" lg:text-[23px] h-23 font-poppins font-semibold lg:leading-[22.7px] sm:flex  sm:justify-end lg:block">
@@ -132,8 +130,7 @@ const Cars = () => {
                     2019
                   </div>
                 </div>
-                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300">
-                </div>
+                <div className="lg:w-[2px]  lg:left-400 lg:top-260 border sm:w-16  border-gray-300"></div>
 
                 <div className="flex flex-col sm:-ml-7 lg:ml-0">
                   <div className="w-29.32 h-11.92 top-498.6 left-731.02 font-poppins text-9 font-normal leading-14 text-center text-black">
@@ -157,18 +154,18 @@ const Cars = () => {
             </div>
           </div>
         </div>
-        <div className=" border-2 rounded-xl mt-4 bg-white p-4 ">
-          <div className=" gap-3 flex flex-row  bg-white pr-14  ">
-            <div className=" w-1/3 ">
+        <div className=" border-2 rounded-xl mt-4 bg-white lg:p-4 sm:-pl-4 sm:pt-4  sm:w-fit  lg:w-fit ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col  bg-white lg:pr-12 sm:w-screen   lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-full  sm:h-52 lg:h-auto sm:-ml-4 sm:-pr-6 lg:ml-0 ">
               <img className="w-full h-full" alt="car JPEG" src="car2.png" />
             </div>
-            <div className=" w-3/4">
+            <div className=" lg:w-3/4 sm:w-full">
               <div className="flex flex-col">
-                <div className="flex flex-row ">
+                <div className="flex lg:flex-row sm:flex-col">
                   <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
                     Volkswagen Polo 1.2 TDI
                   </h1>
-                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] flex justify-end float-right">
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
                     Date Published: 12/10/2023
                   </p>
                 </div>
@@ -184,12 +181,12 @@ const Cars = () => {
                   </h1>
                 </div>
 
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
                   + Omregistrering
                 </div>
 
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
                     <div className="flex-flex-col gap-2">
                       <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
                         Vehicle Type
@@ -263,8 +260,8 @@ const Cars = () => {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
                   <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
                     <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
                       Damaged
@@ -282,13 +279,13 @@ const Cars = () => {
                   </div>
                 </div>
 
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
                   <div>
                     <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
                   </div>
 
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
                       Prigrevica
                     </p>
                   </div>
@@ -297,158 +294,18 @@ const Cars = () => {
             </div>
           </div>
         </div>
-        <div className=" border-2 rounded-xl mt-4 bg-red-200 p-4 ">
-          <div className=" gap-3 flex flex-row  bg-red-200 pr-14  ">
-            <div className=" w-1/3 ">
+        <div className=" border-2 rounded-xl mt-4 bg-red-200 lg:p-4 sm:pl-1 sm:pt-4 sm:w-fit lg:w-fit ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col  bg-red-200 lg:pr-12 sm:w-screen  lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-screen  sm:h-52 lg:h-auto sm:-ml-2 lg:ml-0 ">
               <img className="w-full h-full" alt="car JPEG" src="car2.png" />
             </div>
-            <div className=" w-3/4">
+            <div className=" lg:w-3/4 sm:w-screen">
               <div className="flex flex-col">
-                <div className="flex flex-row ">
-                  <h1 className=" w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
-                    Volkswagen Polo 1.2 TDI
-                  </h1>
-                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444]">
-                    Date Published: 12/10/2023
-                  </p>
-                </div>
-
-                <div className="flex flex-row  py-4   gap-4 ">
-                  <div className="  text-[24px]  h-[26.22px] left-[729.13px] font-poppins  font-semibold leading-[22.7px]   text-[#EF2C2E]">
-                    <p className=" text-[28px] font-poppins font-bold  leading-[22.7px]">
-                      20,300€
-                    </p>
-                  </div>
-                  <h1 className="   h-[26.22px]  left-[729.13px]  font-poppins text-[20px] font-normal leading-24  -mt-1 text-black">
-                    <s> 20,300 €</s>
-                  </h1>
-                </div>
-
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
-                  + Omregistrering
-                </div>
-
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Vehicle Type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Sedan
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        HP/kW
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        55/75
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Gearbox type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Auto
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Doors number
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        4
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Kilometers
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        150,000 km
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        cm3
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        2000
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Manufacture year
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        2019
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Fuel type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Diesel
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      Damaged
-                    </h1>
-                  </div>
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className=" text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      (Not)Registered
-                    </h1>
-                  </div>
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className="  text-[#035afcee] px-4 py-2  text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      Guarantee
-                    </h1>
-                  </div>
-                </div>
-
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
-                  <div>
-                    <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
-                  </div>
-
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
-                      Prigrevica
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" border-2 rounded-xl mt-4 bg-white p-4 ">
-          <div className=" gap-3 flex flex-row  bg-white pr-14  ">
-            <div className=" w-1/3 ">
-              <img className="w-full h-full" alt="car JPEG" src="car2.png" />
-            </div>
-            <div className=" w-3/4">
-              <div className="flex flex-col">
-                <div className="flex flex-row ">
+                <div className="flex lg:flex-row sm:flex-col">
                   <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
                     Volkswagen Polo 1.2 TDI
                   </h1>
-                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] flex justify-end float-right">
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
                     Date Published: 12/10/2023
                   </p>
                 </div>
@@ -464,12 +321,12 @@ const Cars = () => {
                   </h1>
                 </div>
 
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
                   + Omregistrering
                 </div>
 
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
                     <div className="flex-flex-col gap-2">
                       <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
                         Vehicle Type
@@ -543,8 +400,8 @@ const Cars = () => {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
                   <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
                     <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
                       Damaged
@@ -562,13 +419,153 @@ const Cars = () => {
                   </div>
                 </div>
 
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
                   <div>
                     <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
                   </div>
 
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
+                      Prigrevica
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" border-2 rounded-xl mt-4 bg-white lg:p-4 sm:pl-1 sm:pt-4 sm:w-fit lg:w-fit ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col  bg-white lg:pr-12 sm:w-screen  lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-screen  sm:h-52 lg:h-auto sm:-ml-2 lg:ml-0 ">
+              <img className="w-full h-full" alt="car JPEG" src="car2.png" />
+            </div>
+            <div className=" lg:w-3/4 sm:w-screen">
+              <div className="flex flex-col">
+                <div className="flex lg:flex-row sm:flex-col">
+                  <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
+                    Volkswagen Polo 1.2 TDI
+                  </h1>
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
+                    Date Published: 12/10/2023
+                  </p>
+                </div>
+
+                <div className="flex flex-row  py-4   gap-4 ">
+                  <div className="  text-[24px]  h-[26.22px] left-[729.13px] font-poppins  font-semibold leading-[22.7px]   text-[#EF2C2E]">
+                    <p className=" text-[28px] font-poppins font-bold  leading-[22.7px]">
+                      20,300€
+                    </p>
+                  </div>
+                  <h1 className="   h-[26.22px]  left-[729.13px]  font-poppins text-[20px] font-normal leading-24 flex justify-center items-center -mt-1  text-black">
+                    <s> 20,300 €</s>
+                  </h1>
+                </div>
+
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                  + Omregistrering
+                </div>
+
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Vehicle Type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Sedan
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        HP/kW
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        55/75
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Gearbox type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Auto
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Doors number
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        4
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Kilometers
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        150,000 km
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        cm3
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        2000
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Manufacture year
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        2019
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Fuel type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Diesel
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      Damaged
+                    </h1>
+                  </div>
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className=" text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      (Not)Registered
+                    </h1>
+                  </div>
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className="  text-[#035afcee] px-4 py-2  text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      Guarantee
+                    </h1>
+                  </div>
+                </div>
+
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
+                  <div>
+                    <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
+                  </div>
+
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
                       Prigrevica
                     </p>
                   </div>
@@ -578,160 +575,20 @@ const Cars = () => {
           </div>
         </div>
         <div
-          className=" border-2 rounded-xl mt-4  p-4  "
+          className=" border-2 rounded-xl mt-4  lg:p-4 sm:pl-1 sm:pt-4 sm:w-fit lg:w-fit  "
           style={{ backgroundColor: "#00308726" }}
         >
-          <div className=" gap-3 flex flex-row  pr-14  ">
-            <div className=" w-1/3 ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col   lg:pr-12 sm:w-screen  lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-screen  sm:h-52 lg:h-auto sm:-ml-2 lg:ml-0 ">
               <img className="w-full h-full" alt="car JPEG" src="car2.png" />
             </div>
-            <div className=" w-3/4">
+            <div className=" lg:w-3/4 sm:w-screen">
               <div className="flex flex-col">
-                <div className="flex flex-row ">
+                <div className="flex lg:flex-row sm:flex-col">
                   <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
                     Volkswagen Polo 1.2 TDI
                   </h1>
-                  <p className="  w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] flex justify-end float-right">
-                    Date Published: 12/10/2023
-                  </p>
-                </div>
-
-                <div className="flex flex-row  py-4   gap-4 ">
-                  <div className="  text-[24px]  h-[26.22px] left-[729.13px] font-poppins  font-semibold leading-[22.7px]   text-[#EF2C2E]">
-                    <p className=" text-[28px] font-poppins font-bold  leading-[22.7px]">
-                      20,300€
-                    </p>
-                  </div>
-                  <h1 className="   h-[26.22px]  left-[729.13px]  font-poppins text-[20px] font-normal leading-24 -mt-1  text-black">
-                    <s> 20,300 €</s>
-                  </h1>
-                </div>
-
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
-                  + Omregistrering
-                </div>
-
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Vehicle Type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Sedan
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        HP/kW
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        55/75
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Gearbox type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Auto
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Doors number
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        4
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Kilometers
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        150,000 km
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        cm3
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        2000
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="w-1/4 flex flex-col  gap-3">
-                    <div className="flex-flex-col gap-2">
-                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Manufacture year
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        2019
-                      </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
-                        Fuel type
-                      </h1>
-                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
-                        Diesel
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      Damaged
-                    </h1>
-                  </div>
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className=" text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      (Not)Registered
-                    </h1>
-                  </div>
-                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
-                    <h1 className="  text-[#035afcee] px-4 py-2  text-[16px] font-2xl font-semibold   leading-15 text-left">
-                      Guarantee
-                    </h1>
-                  </div>
-                </div>
-
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
-                  <div>
-                    <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
-                  </div>
-
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
-                      Prigrevica
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" border-2 rounded-xl mt-4 bg-white p-4 ">
-          <div className=" gap-3 flex flex-row  bg-white pr-14  ">
-            <div className=" w-1/3 ">
-              <img className="w-full h-full" alt="car JPEG" src="car2.png" />
-            </div>
-            <div className=" w-3/4">
-              <div className="flex flex-col">
-                <div className="flex flex-row ">
-                  <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
-                    Volkswagen Polo 1.2 TDI
-                  </h1>
-                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] flex justify-end float-right">
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
                     Date Published: 12/10/2023
                   </p>
                 </div>
@@ -747,12 +604,12 @@ const Cars = () => {
                   </h1>
                 </div>
 
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
                   + Omregistrering
                 </div>
 
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
                     <div className="flex-flex-col gap-2">
                       <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
                         Vehicle Type
@@ -826,8 +683,8 @@ const Cars = () => {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
                   <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
                     <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
                       Damaged
@@ -845,13 +702,13 @@ const Cars = () => {
                   </div>
                 </div>
 
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
                   <div>
                     <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
                   </div>
 
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
                       Prigrevica
                     </p>
                   </div>
@@ -860,18 +717,18 @@ const Cars = () => {
             </div>
           </div>
         </div>
-        <div className=" border-2 rounded-xl mt-4 bg-white p-4 ">
-          <div className=" gap-3 flex flex-row  bg-white pr-14  ">
-            <div className=" w-1/3 ">
+        <div className=" border-2 rounded-xl mt-4 bg-white lg:p-4 sm:pl-1 sm:pt-4 sm:w-fit lg:w-fit ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col  bg-white lg:pr-12 sm:w-screen  lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-screen  sm:h-52 lg:h-auto sm:-ml-2 lg:ml-0 ">
               <img className="w-full h-full" alt="car JPEG" src="car2.png" />
             </div>
-            <div className=" w-3/4">
+            <div className=" lg:w-3/4 sm:w-screen">
               <div className="flex flex-col">
-                <div className="flex flex-row ">
+                <div className="flex lg:flex-row sm:flex-col">
                   <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
                     Volkswagen Polo 1.2 TDI
                   </h1>
-                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] flex justify-end float-right">
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
                     Date Published: 12/10/2023
                   </p>
                 </div>
@@ -887,12 +744,12 @@ const Cars = () => {
                   </h1>
                 </div>
 
-                <div className="w-102 h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
                   + Omregistrering
                 </div>
 
-                <div className="flex flex-row gap-3 my-5  ">
-                  <div className="w-1/4 flex flex-col  gap-3">
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
                     <div className="flex-flex-col gap-2">
                       <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
                         Vehicle Type
@@ -966,8 +823,8 @@ const Cars = () => {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4  my-9 flex flex-row  gap-2 w-full">
-                <div className="flex flex-row  my-2 gap-3   ">
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
                   <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
                     <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
                       Damaged
@@ -985,13 +842,153 @@ const Cars = () => {
                   </div>
                 </div>
 
-                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2">
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
                   <div>
                     <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
                   </div>
 
-                  <div className=" top-1158 left-1452 w-60 h-18">
-                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black">
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
+                      Prigrevica
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" border-2 rounded-xl mt-4 bg-white lg:p-4 sm:pl-1 sm:pt-4 sm:w-fit lg:w-fit ">
+          <div className=" gap-3 flex lg:flex-row sm:flex-col  bg-white lg:pr-12 sm:w-screen  lg:w-fit">
+            <div className=" lg:w-1/4 sm:w-screen  sm:h-52 lg:h-auto sm:-ml-2 lg:ml-0 ">
+              <img className="w-full h-full" alt="car JPEG" src="car2.png" />
+            </div>
+            <div className=" lg:w-3/4 sm:w-screen">
+              <div className="flex flex-col">
+                <div className="flex lg:flex-row sm:flex-col">
+                  <h1 className="  w-3/4 h-[30px] font-poppins text-2xl font-semibold leading-[30px] text-left  text-black float-left">
+                    Volkswagen Polo 1.2 TDI
+                  </h1>
+                  <p className=" w-1/2  h-[18px] font-poppins text-[14px] font-normal leading-[18px] text-Second text-[#444444] lg:flex lg:justify-end lg:float-right sm:float-left sm:mt-5">
+                    Date Published: 12/10/2023
+                  </p>
+                </div>
+
+                <div className="flex flex-row  py-4   gap-4 ">
+                  <div className="  text-[24px]  h-[26.22px] left-[729.13px] font-poppins  font-semibold leading-[22.7px]   text-[#EF2C2E]">
+                    <p className=" text-[28px] font-poppins font-bold  leading-[22.7px]">
+                      20,300€
+                    </p>
+                  </div>
+                  <h1 className="   h-[26.22px]  left-[729.13px]  font-poppins text-[20px] font-normal leading-24 flex justify-center items-center -mt-1  text-black">
+                    <s> 20,300 €</s>
+                  </h1>
+                </div>
+
+                <div className="w-fit h-18 top-654 left-1045 font-poppins text-12 font-normal leading-18 text-left text-black">
+                  + Omregistrering
+                </div>
+
+                <div className="lg:flex lg:flex-row lg:gap-3  my-5 sm:grid sm:grid-cols-2 sm:gap-x-0 ">
+                  <div className="lg:w-1/5 flex flex-col  gap-3 sm:w-3/4">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Vehicle Type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Sedan
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        HP/kW
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        55/75
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Gearbox type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Auto
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Doors number
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        4
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Kilometers
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        150,000 km
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        cm3
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        2000
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 flex flex-col  gap-3">
+                    <div className="flex-flex-col gap-2">
+                      <h1 className="  w-62 h-15 top-690 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Manufacture year
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        2019
+                      </h1>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <h1 className="w-33 h-15 top-736 left-1045 font-poppins text-[14px] font-normal leading-15 text-left bg-#444444">
+                        Fuel type
+                      </h1>
+                      <h1 className="  w-62 h-18 top-707 left-1045 font-poppins text-[14px] font-bold leading-18 text-left text-black">
+                        Diesel
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4  my-9 flex lg:flex-row  gap-2  w-full ">
+                <div className="flex lg:flex-row  my-2 gap-3  sm:flex-col  ">
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className="  text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      Damaged
+                    </h1>
+                  </div>
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className=" text-[#035afcee] px-4 py-2 text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      (Not)Registered
+                    </h1>
+                  </div>
+                  <div className=" rounded-2xl bg-gray-300   left-[1045px] py-2 px-2">
+                    <h1 className="  text-[#035afcee] px-4 py-2  text-[16px] font-2xl font-semibold   leading-15 text-left">
+                      Guarantee
+                    </h1>
+                  </div>
+                </div>
+
+                <div className=" first-letter:  gap-1 flex flex-row right-1   space-x-2 sm:relative sm:top-[4.5rem] lg:top-0 ">
+                  <div>
+                    <HiOutlineLocationMarker className=" h-[30px] w-[30px]" />
+                  </div>
+
+                  <div className=" lg:top-1158 lg:left-1452  w-60 h-18 sm:absolute sm:top-1 sm:left-8 lg:top-0">
+                    <p className="font-poppins text-12 font-normal leading-18 text-left text-black ">
                       Prigrevica
                     </p>
                   </div>
@@ -1014,7 +1011,7 @@ const Cars = () => {
         </div>
       </main>
       <div
-        className="h-[4240px] w-full -mt-20 "
+        className="h-[4240px] w-full -mt-20 sm:hidden lg:block"
         style={{ backgroundColor: "#EDEEF0" }}
       >
         <div className="flex h-[40px] w-[110px] bg-red-500 rounded-xl text-white justify-center cursor-pointer items-center mt-[1000px] ml-1 mr-3">

@@ -13,10 +13,10 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div style={{backgroundColor:"#EDEEF0"}} className="h-full w-fit">
+    <div style={{backgroundColor:"#EDEEF0"}} className="h-fit w-fit">
       <Navbar />
       <div
-        className="lg:mt-7 lg:mb-8 flex lg:ml-16 text-base font-semibold cursor-pointer sm:justify-start sm:ml-10 sm:items-end text-center  sm:flex-wrap sm:gap-x-2 sm:gap-1 sm:my-5  lg:gap-y-0 sm:w-2/6 lg:w-screen lg:gap-2 lg:justify-start "
+        className="lg:mt-7 lg:mb-8 flex lg:ml-16 text-base font-semibold cursor-pointer sm:justify-start sm:ml-10 sm:items-end text-center  sm:flex-wrap sm:gap-x-2 sm:gap-1 sm:my-5  lg:gap-y-0 sm:w-4/6 lg:w-screen lg:gap-2 lg:justify-start "
         style={{ color: "#003087" }}
       >
         <Link href={"/"} >Home</Link>
@@ -27,10 +27,10 @@ const page = () => {
         <ChevronRight />
         <p className="text-center">Kia Stonic 1.4 MPI EX URBAN A/T</p>
       </div>
-      <section className=" w-fit h-[3420px]">
+      <section className=" w-fit  lg:mb-15  sm:mb-[1250px] lg:h-[2150px] ">
         <Cars />
       </section>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
